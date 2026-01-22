@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Conference 2025: Key Takeaways</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        
+        .hero h1 {
+            color: #2c3e50;
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero-subtitle {
+            color: #7f8c8d;
+            font-size: 1.4em;
+            max-width: 900px;
+            margin: 0 auto 30px;
+        }
+        
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .stat-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 35px;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        
+        /* Section Headers */
+        .section-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 50px 0 30px;
+        }
+        
+        .section-number {
+            font-size: 1.5em;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+        
+        .section-title {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .section-subtitle {
+            font-size: 1.3em;
+            opacity: 0.95;
+        }
+        
+        /* Takeaway Card */
+        .takeaway-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .takeaway-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+        }
+        
+        .takeaway-card:nth-child(odd)::before { background: linear-gradient(90deg, #e74c3c 0%, #c0392b 100%); }
+        .takeaway-card:nth-child(even)::before { background: linear-gradient(90deg, #3498db 0%, #2980b9 100%); }
+        
+        .speaker-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .speaker-icon {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        
+        .speaker-details {
+            flex: 1;
+        }
+        
+        .speaker-name {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .speaker-title {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        .takeaway-content {
+            color: #2c3e50;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+        
+        /* Metric Box */
+        .metric-box {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-left: 5px solid #667eea;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+        
+        .metric-label {
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .metric-value {
+            color: #2c3e50;
+            font-size: 1.05em;
+            line-height: 1.7;
+        }
+        
+        /* Stats Highlight */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 3em;
+            font-weight: bold;
+            color: #f57c00;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            color: #2c3e50;
+            font-size: 1em;
+            line-height: 1.5;
+        }
+        
+        /* Case Study Box */
+        .case-study {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 25px 0;
+        }
+        
+        .case-study-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #27ae60;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .case-study-content {
+            color: #2c3e50;
+            line-height: 1.8;
+        }
+        
+        /* Warning/Alert Box */
+        .alert-box {
+            background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+            border: 3px solid #e74c3c;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+        
+        .alert-title {
+            font-weight: bold;
+            color: #c0392b;
+            margin-bottom: 12px;
+            font-size: 1.3em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .alert-content {
+            color: #2c3e50;
+            line-height: 1.8;
+        }
+        
+        /* Revenue Model Grid */
+        .revenue-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        
+        .revenue-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            border-top: 4px solid;
+        }
+        
+        .revenue-card:nth-child(1) { border-top-color: #e74c3c; }
+        .revenue-card:nth-child(2) { border-top-color: #3498db; }
+        .revenue-card:nth-child(3) { border-top-color: #27ae60; }
+        .revenue-card:nth-child(4) { border-top-color: #f39c12; }
+        
+        .revenue-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        
+        .revenue-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .revenue-desc {
+            color: #5a6c7d;
+            line-height: 1.7;
+        }
+        
+        /* Growth Tactics */
+        .tactics-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        
+        .tactic-item {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border-left: 5px solid #27ae60;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        
+        .tactic-icon {
+            background: #27ae60;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+        
+        .tactic-content {
+            flex: 1;
+        }
+        
+        .tactic-name {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .tactic-detail {
+            color: #5a6c7d;
+            line-height: 1.6;
+        }
+        
+        /* Mantra Cards */
+        .mantra-section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        
+        .mantra-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .mantra-title {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .mantra-subtitle {
+            color: #7f8c8d;
+            font-size: 1.2em;
+        }
+        
+        .mantra-grid {
+            display: grid;
+            gap: 30px;
+        }
+        
+        .mantra-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 15px;
+            padding: 35px;
+            border-left: 6px solid;
+        }
+        
+        .mantra-card:nth-child(1) { border-left-color: #e74c3c; }
+        .mantra-card:nth-child(2) { border-left-color: #3498db; }
+        .mantra-card:nth-child(3) { border-left-color: #27ae60; }
+        
+        .mantra-quote {
+            font-size: 2em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-style: italic;
+            line-height: 1.4;
+        }
+        
+        .mantra-quote::before {
+            content: '"';
+            color: #e74c3c;
+            font-size: 1.5em;
+        }
+        
+        .mantra-quote::after {
+            content: '"';
+            color: #e74c3c;
+            font-size: 1.5em;
+        }
+        
+        .mantra-speaker {
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+        
+        .mantra-company {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        
+        .mantra-explanation {
+            color: #2c3e50;
+            line-height: 1.8;
+        }
+        
+        /* Summary Box */
+        .summary-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 20px;
+            padding: 50px 40px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        
+        .summary-title {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+        
+        .summary-text {
+            font-size: 1.3em;
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>🎯 The Newsletter Conference 2025</h1>
+            <p class="hero-subtitle">Key insights from 400+ attendees and the industry's top newsletter operators in New York</p>
+            <div class="hero-stats">
+                <div class="stat-badge">5 Major Themes</div>
+                <div class="stat-badge">15+ Speakers</div>
+                <div class="stat-badge">Actionable Strategies</div>
+            </div>
+        </div>
+        
+        <!-- Section 1: Metrics -->
+        <div class="section-header">
+            <div class="section-number">Theme #1</div>
+            <div class="section-title">Find the Metrics That Make Sense for YOU</div>
+            <div class="section-subtitle">Not all metrics matter equally—choose the ones that align with your goals</div>
+        </div>
+        
+        <div class="takeaway-card">
+            <div class="speaker-info">
+                <div class="speaker-icon">AR</div>
+                <div class="speaker-details">
+                    <div class="speaker-name">Adam Ryan</div>
+                    <div class="speaker-title">Founder & CEO, Workweek</div>
+                </div>
+            </div>
+            
+            <div class="takeaway-content">
+                <p style="margin-bottom: 20px;">Success ties back to <strong>three specific metrics:</strong></p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">1.9:1</span>
+                    <div class="stat-label">Total Opens to Unique Opens Ratio<br>(Best-performing newsletters)</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">0.75%</span>
+                    <div class="stat-label">Ad CTR for B2B<br>(Above average performance)</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">1.5%</span>
+                    <div class="stat-label">Ad CTR for General Audience<br>(Indicator of success)</div>
+                </div>
+            </div>
+            
+            <div class="metric-box">
+                <div class="metric-label">📊 Why These Metrics Matter</div>
+                <div class="metric-value">
+                    <strong>Total opens to unique opens:</strong> If readers are opening multiple times or forwarding to friends, whatever you wrote really hit home.<br><br>
+                    <strong>Ad click-through rate:</strong> Benchmarks help you know if ads are performing well above average.<br><br>
+                    <strong>Churn rates:</strong> Track how long readers stay active—better signal than unsubscribes per newsletter.
+                </div>
+            </div>
+        </div>
+        
+        <div class="takeaway-card">
+            <div class="speaker-info">
+                <div class="speaker-icon">TP</div>
+                <div class="speaker-details">
+                    <div class="speaker-name">Tara Palmeri</div>
+                    <div class="speaker-title">Author, The Red Letter</div>
+                </div>
+            </div>
+            
+            <div class="takeaway-content">
+                <p style="margin-bottom: 20px;">Launched newsletter in March, now has <strong>14,000 subscribers</strong>. But her social media reach is massive:</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">104K</span>
+                    <div class="stat-label">Twitter Followers</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">54K</span>
+                    <div class="stat-label">Instagram Followers</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">19K</span>
+                    <div class="stat-label">TikTok Followers</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">18K</span>
+                    <div class="stat-label">YouTube Followers</div>
+                </div>
+            </div>
+            
+            <div class="metric-box">
+                <div class="metric-label">🎯 Her Goal</div>
+                <div class="metric-value">
+                    Convert <strong>5% or more</strong> of social media audiences to newsletter. This would represent nearly <strong>10,000+ new subscribers</strong>.<br><br>
+                    <em>"It's unrealistic to expect to convert the majority—especially when platforms do everything they can to keep you from leaving the app."</em>
+                </div>
+            </div>
+        </div>
+        
+        <div class="takeaway-card">
+            <div class="speaker-info">
+                <div class="speaker-icon">SG</div>
+                <div class="speaker-details">
+                    <div class="speaker-name">Sean Griffey</div>
+                    <div class="speaker-title">Co-founder, Industry Dive</div>
+                </div>
+            </div>
+            
+            <div class="alert-box">
+                <div class="alert-title">
+                    <span>⚠️</span>
+                    <span>The Bot Click Problem</span>
+                </div>
+                <div class="alert-content">
+                    <strong>Q1 2025 data from Omeda:</strong> About <strong>71% of all clicks on newsletters came from bots.</strong><br><br>
+                    Too many newsletter operators ignore this and tell sponsors all clicks are from humans. That sponsor will walk away forever when they discover the truth.
+                </div>
+            </div>
+            
+            <div class="metric-box">
+                <div class="metric-label">✅ His Advice</div>
+                <div class="metric-value">
+                    <strong>Be transparent about what's really going on.</strong> Make sure you understand what your metrics really mean. Better to be honest now than lose sponsors later.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Section 2: Welcome Flow -->
+        <div class="section-header">
+            <div class="section-number">Theme #2</div>
+            <div class="section-title">Keep Optimizing Your Welcome Flow</div>
+            <div class="section-subtitle">The moments after signup are the most valuable—maximize them</div>
+        </div>
+        
+        <div class="takeaway-card">
+            <div class="speaker-info">
+                <div class="speaker-icon">LN</div>
+                <div class="speaker-details">
+                    <div class="speaker-name">Louis Nicholls</div>
+                    <div class="speaker-title">Co-founder, Sparkloop</div>
+                </div>
+            </div>
+            
+            <div class="takeaway-content">
+                <p style="margin-bottom: 20px;"><strong>Don't just send a welcome series—optimize the thank you page to drive immediate revenue.</strong></p>
+            </div>
+            
+            <div class="metric-box">
+                <div class="metric-label">💡 The Strategy</div>
+                <div class="metric-value">
+                    Upsell readers right after they subscribe. Use the thank you page after sign-up to drive readers to buy something: product, subscription, membership, course, etc.
+                </div>
+            </div>
+        </div>
+        
+        <div class="takeaway-card">
+            <div class="speaker-info">
+                <div class="speaker-icon">JS</div>
+                <div class="speaker-details">
+                    <div class="speaker-name">Jaspreet Singh</div>
+                    <div class="speaker-title">Founder & CEO, Briefs Media</div>
+                </div>
+            </div>
+            
+            <div class="case-study">
+                <div class="case-study-title">
+                    <span>📈</span>
+                    <span>Briefs Media Case Study: Evolution of Post-Signup Flow</span>
+                </div>
+                <div class="case-study-content">
+                    <strong>Phase 1: Newsletter Promotions</strong><br>
+                    • Promoted other newsletters through Sparkloop<br>
+                    • Added page promoting financial advisory tool<br>
+                    • Result: <strong>$2 revenue per email collected</strong><br><br>
+                    
+                    <strong>The Problem:</strong><br>
+                    • Paid ads cost: <strong>$3-$5 per email address</strong><br>
+                    • Niche audience (investors) = higher acquisition costs<br>
+                    • Not profitable yet<br><br>
+                    
+                    <strong>Phase 2: Premium Upsell Strategy</strong><br>
+                    • Rebuilt entire post-sign-up flow<br>
+                    • Focused on selling <strong>Briefs Pro at ~$500/year</strong><br>
+                    • Result: <strong>Immediately make money back on paid ads</strong><br>
+                    • Reinvest profits back into reaching more readers
+                </div>
+            </div>
+            
+            <div class="metric-box">
+                <div class="metric-label">🎯 Key Takeaway</div>
+                <div class="metric-value">
+                    Optimize your post-signup flow to turn acquisition costs into immediate revenue. If you can break even or profit on first interaction, you can scale aggressively.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Section 3: Revenue Outside Inbox -->
+        <div class="section-header">
+            <div class="section-number">Theme #3</div>
+            <div class="section-title">Think Outside the Inbox for Revenue</div>
+            <div class="section-subtitle">Your newsletter audience can be monetized in ways beyond subscriptions and ads</div>
+        </div>
+        
+        <div class="takeaway-card">
+            <div class="speaker-info">
+                <div class="speaker-icon">KL</div>
+                <div class="speaker-details">
+                    <div class="speaker-name">Kate Lee</div>
+                    <div class="speaker-title">Editor-in-Chief & GM, Every</div>
+                </div>
+            </div>
+            
+            <div class="takeaway-content">
+                <p style="margin-bottom: 25px;"><strong>Every has gone far beyond just a publication.</strong> They've spun off several lines of business, building tools for themselves first—if they get excited about the potential, their audience will too.</p>
+            </div>
+            
+            <div class="revenue-grid">
+                <div class="revenue-card">
+                    <div class="revenue-icon">📰</div>
+                    <div class="revenue-name">Traditional</div>
+                    <div class="revenue-desc">Advertising and paid subscriptions (expected revenue streams)</div>
+                </div>
+                
+                <div class="revenue-card">
+                    <div class="revenue-icon">🎓</div>
+                    <div class="revenue-name">Education</div>
+                    <div class="revenue-desc">Paid courses teaching skills to their audience</div>
+                </div>
+                
+                <div class="revenue-card">
+                    <div class="revenue-icon">💼</div>
+                    <div class="revenue-name">Consultancy</div>
+                    <div class="revenue-desc">Leveraging expertise to provide advisory services</div>
+                </div>
+                
+                <div class="revenue-card">
+                    <div class="revenue-icon">🛠️</div>
+                    <div class="revenue-name">Products</div>
+                    <div class="revenue-desc">Lex (AI writing tool), Sparkle (Mac organization app)</div>
+                </div>
+            </div>
+            
+            <div class="case-study">
+                <div class="case-study-title">
+                    <span>🚀</span>
+                    <span>Sparkle Success Story</span>
+                </div>
+                <div class="case-study-content">
+                    <strong>80% of Sparkle users are free readers</strong> on one of Every's newsletters.<br><br>
+                    This means they've found a way to take users who'd otherwise only be monetized with ads and <strong>increase the lifetime value</strong> of those users significantly.
+                </div>
+            </div>
+        </div>
+        
+        <div class="takeaway-card">
+            <div class="speaker-info">
+                <div class="speaker-icon">BA</div>
+                <div class="speaker-details">
+                    <div class="speaker-name">Boye Akolade</div>
+                    <div class="speaker-title">Co-founder & President, The Future Party</div>
+                </div>
+            </div>
+            
+            <div class="metric-box">
+                <div class="metric-label">🎪 Events Strategy</div>
+                <div class="metric-value">
+                    <strong>Pair newsletters with events</strong>—whether it's a big conference or local meet-up.<br><br>
+                    These offline experiences give newsletter operators the chance to <strong>drive significant revenue in a new way</strong> while deepening connection with audience.
+                </div>
+            </div>
+        </div>
+        
+        <div class="takeaway-card">
+            <div class="speaker-info">
+                <div class="speaker-icon">DL</div>
+                <div class="speaker-details">
+                    <div class="speaker-name">Dwayne Lafleur</div>
+                    <div class="speaker-title">CEO & Founder, Ezoic</div>
+                </div>
+            </div>
+            
+            <div class="metric-box">
+                <div class="metric-label">🌐 Website Monetization</div>
+                <div class="metric-value">
+                    A decade ago, businesses didn't emphasize collecting emails. Now emails are the center of any good <strong>first-party data strategy</strong>.<br><br>
+                    Advertisers are eager to work with brands who understand their audience. Newsletter operators should sell ads <strong>not just in newsletter but also on their websites</strong>—your email address makes your audience very valuable.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Section 4: Old-School Growth -->
+        <div class="section-header">
+            <div class="section-number">Theme #4</div>
+            <div class="section-title">Old-School Growth Tactics Still Work</div>
+            <div class="section-subtitle">Proven strategies that continue to drive results</div>
+        </div>
+        
+        <div class="takeaway-card">
+            <ul class="tactics-list">
+                <li class="tactic-item">
+                    <div class="tactic-icon">1</div>
+                    <div class="tactic-content">
+                        <div class="tactic-name">Lead Magnets (Aine Stapleton, Semafor)</div>
+                        <div class="tactic-detail">
+                            At International Intrigue, created "Diplomat Salary Report"—compiled salaries for diplomats from China, Germany, USA. To access report, enter email address. <strong>Huge source of growth.</strong> Turns out people are curious about how their peers get paid!
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="tactic-item">
+                    <div class="tactic-icon">2</div>
+                    <div class="tactic-content">
+                        <div class="tactic-name">Cross-Promotion & Email Courses (Nathan Barry, Kit)</div>
+                        <div class="tactic-detail">
+                            Opportunities for <strong>cross-promotion with other newsletters</strong> and turning your <strong>top-performing content into email courses</strong> that attract new subscribers.
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="tactic-item">
+                    <div class="tactic-icon">3</div>
+                    <div class="tactic-content">
+                        <div class="tactic-name">Simple Landing Pages (Manny Reyes, Boletin Growth)</div>
+                        <div class="tactic-detail">
+                            Landing pages can be linked from website footer to ads in other newsletters. <strong>The secret: Keep everything super simple.</strong> The less you have on the page, the better these pages tend to convert.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Section 5: Mantras -->
+        <div class="section-header">
+            <div class="section-number">Theme #5</div>
+            <div class="section-title">Let Your Mantra Guide Your Strategy</div>
+            <div class="section-subtitle">When you find your mantra, use it to shape your strategy going forward</div>
+        </div>
+        
+        <div class="mantra-section">
+            <div class="mantra-header">
+                <div class="mantra-title">💭 3 Powerful Mantras from Newsletter Leaders</div>
+                <div class="mantra-subtitle">These guiding principles shape everything they do</div>
+            </div>
+            
+            <div class="mantra-grid">
+                <div class="mantra-card">
+                    <div class="mantra-quote">Don't chase reach, chase resonance.</div>
+                    <div class="mantra-speaker">Adam Ryan</div>
+                    <div class="mantra-company">Workweek</div>
+                    <div class="mantra-explanation">
+                        Aligns with Workweek's mission to build B2B newsletters for professionals in HR, content marketing, etc. The goal isn't the biggest newsletter—it's delivering real value to core audience. Quality over quantity.
+                    </div>
+                </div>
+                
+                <div class="mantra-card">
+                    <div class="mantra-quote">Find your niche, then scale from there.</div>
+                    <div class="mantra-speaker">Sean Griffey</div>
+                    <div class="mantra-company">Industry Dive</div>
+                    <div class="mantra-explanation">
+                        Industry Dive now reaches millions across dozens of verticals (automotive, retail, etc.), but each started as a niche publication. Once they found the right fit between content and audience, they worked to grow. Don't try to be everything to everyone from day one.
+                    </div>
+                </div>
+                
+                <div class="mantra-card">
+                    <div class="mantra-quote">Zig when others zag.</div>
+                    <div class="mantra-speaker">Isaac Saul</div>
+                    <div class="mantra-company">Tangle News</div>
+                    <div class="mantra-explanation">
+                        Plenty of daily newsletters do brevity and bullet points better than he could. Instead of copying that format, he built a newsletter that takes <strong>10-15 minutes to read every single day</strong>. It's intentionally different, and by being different, he's found a loyal audience.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Summary -->
+        <div class="summary-box">
+            <div class="summary-title">🎯 The Big Picture</div>
+            <div class="summary-text">
+                The Newsletter Conference 2025 revealed that success comes from <strong>strategic focus</strong>, not chasing every tactic.<br><br>
+                
+                <strong>Choose the right metrics.</strong> Optimize the moments that matter. Think beyond the inbox. Use proven growth tactics. Let your mantra guide your decisions.<br><br>
+                
+                400+ attendees walked away with actionable insights. Now you have them too.
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

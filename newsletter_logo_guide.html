@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Logo Guide - 5 Ways to Get Your Logo in the Inbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        
+        .hero h1 {
+            color: #2c3e50;
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero-subtitle {
+            color: #7f8c8d;
+            font-size: 1.4em;
+            margin-bottom: 30px;
+        }
+        
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .stat-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 40px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+        
+        /* Section */
+        .section {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #2c3e50;
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            text-align: center;
+            padding-bottom: 15px;
+            border-bottom: 4px solid #3498db;
+        }
+        
+        /* Before You Start */
+        .requirement-box {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            border: 3px solid #f57c00;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .req-title {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #e65100;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .req-text {
+            font-size: 1.2em;
+            color: #2c3e50;
+            text-align: center;
+            line-height: 1.8;
+        }
+        
+        /* Methods Grid */
+        .methods-overview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .method-mini-card {
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .free-method {
+            background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+        }
+        
+        .paid-method {
+            background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+        }
+        
+        /* Detailed Method Cards */
+        .method-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 35px;
+            margin-bottom: 30px;
+            border: 3px solid;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .method-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+        }
+        
+        .method-free {
+            border-color: #27ae60;
+        }
+        
+        .method-free::before {
+            background: linear-gradient(90deg, #27ae60 0%, #229954 100%);
+        }
+        
+        .method-paid {
+            border-color: #e67e22;
+        }
+        
+        .method-paid::before {
+            background: linear-gradient(90deg, #e67e22 0%, #d35400 100%);
+        }
+        
+        .method-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .method-name {
+            font-size: 2em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .method-badges {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .badge {
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        
+        .badge-free {
+            background: #27ae60;
+            color: white;
+        }
+        
+        .badge-paid {
+            background: #e67e22;
+            color: white;
+        }
+        
+        .badge-easy {
+            background: #3498db;
+            color: white;
+        }
+        
+        .badge-technical {
+            background: #9b59b6;
+            color: white;
+        }
+        
+        .method-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+        
+        .detail-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .detail-label {
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            letter-spacing: 0.5px;
+        }
+        
+        .detail-value {
+            color: #2c3e50;
+            font-size: 1.1em;
+        }
+        
+        .detail-value.price {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        
+        .detail-value.free {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #27ae60;
+        }
+        
+        /* Steps */
+        .steps-container {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        
+        .steps-title {
+            font-weight: bold;
+            font-size: 1.3em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .step:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        
+        .step-number {
+            background: #3498db;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2em;
+            flex-shrink: 0;
+            margin-right: 20px;
+        }
+        
+        .step-content {
+            flex: 1;
+        }
+        
+        .step-text {
+            color: #2c3e50;
+            line-height: 1.7;
+            font-size: 1.05em;
+        }
+        
+        /* Pros and Cons */
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .pros-cons {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .pros, .cons {
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .pros {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            border-left: 5px solid #27ae60;
+        }
+        
+        .cons {
+            background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+            border-left: 5px solid #e74c3c;
+        }
+        
+        .pros-title, .cons-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+        
+        .pros-title {
+            color: #27ae60;
+        }
+        
+        .cons-title {
+            color: #e74c3c;
+        }
+        
+        .pros ul, .cons ul {
+            list-style-position: inside;
+            color: #2c3e50;
+            line-height: 1.8;
+        }
+        
+        /* Comparison Table */
+        .comparison-table {
+            overflow-x: auto;
+            margin: 30px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: left;
+            font-size: 1.1em;
+        }
+        
+        td {
+            padding: 20px;
+            border-bottom: 1px solid #ecf0f1;
+            color: #2c3e50;
+        }
+        
+        tr:last-child td {
+            border-bottom: none;
+        }
+        
+        tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .checkmark {
+            color: #27ae60;
+            font-size: 1.5em;
+        }
+        
+        .cross {
+            color: #e74c3c;
+            font-size: 1.5em;
+        }
+        
+        /* Decision Helper */
+        .decision-helper {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border-radius: 15px;
+            padding: 35px;
+            margin-top: 40px;
+        }
+        
+        .decision-title {
+            font-size: 2em;
+            font-weight: bold;
+            color: #1565c0;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .decision-option {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #2196f3;
+        }
+        
+        .decision-scenario {
+            font-weight: bold;
+            color: #1565c0;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        
+        .decision-recommendation {
+            color: #2c3e50;
+            font-size: 1.05em;
+            line-height: 1.7;
+        }
+        
+        /* Warning Box */
+        .warning-box {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            border: 3px dashed #f57c00;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+        
+        .warning-icon {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .warning-text {
+            color: #2c3e50;
+            font-size: 1.1em;
+            text-align: center;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>🎨 Get Your Newsletter Logo in the Inbox</h1>
+            <p class="hero-subtitle">5 Methods to Display Your Logo in Gmail, Yahoo, and Apple Mail</p>
+            <div class="hero-stats">
+                <div class="stat-box" style="background: linear-gradient(135deg, #27ae60 0%, #229954 100%);">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Free Options</div>
+                </div>
+                <div class="stat-box" style="background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Paid Options</div>
+                </div>
+                <div class="stat-box" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Things Readers See</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- What Readers See -->
+        <div class="section">
+            <h2 class="section-title">What Readers See Before Opening</h2>
+            <div class="methods-overview">
+                <div class="method-mini-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    📧 Subject Line
+                </div>
+                <div class="method-mini-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    👀 Preview/Preheader Text
+                </div>
+                <div class="method-mini-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    ✍️ Sender Name/Brand
+                </div>
+                <div class="method-mini-card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                    🎨 Your Logo (When Set Up!)
+                </div>
+            </div>
+            
+            <div class="warning-box">
+                <div class="warning-icon">⚠️</div>
+                <div class="warning-text">
+                    <strong>IMPORTANT:</strong> You need to send from a <strong>custom domain</strong> for this to work.<br>
+                    (newsletter@yourname.substack.com won't work — you need newsletter@yourdomain.com)
+                </div>
+            </div>
+        </div>
+        
+        <!-- Quick Overview -->
+        <div class="section">
+            <h2 class="section-title">All 5 Methods at a Glance</h2>
+            <div class="methods-overview">
+                <div class="method-mini-card free-method">
+                    1️⃣ YouTube Workaround<br>(Gmail)
+                </div>
+                <div class="method-mini-card free-method">
+                    2️⃣ BIMI Setup<br>(Yahoo)
+                </div>
+                <div class="method-mini-card free-method">
+                    3️⃣ Apple Business Connect<br>(Apple Mail)
+                </div>
+                <div class="method-mini-card paid-method">
+                    4️⃣ Common Mark Certificate<br>($1,236/year)
+                </div>
+                <div class="method-mini-card paid-method">
+                    5️⃣ Verified Mark Certificate<br>($1,425-1,668/year)
+                </div>
+            </div>
+        </div>
+        
+        <!-- Method 1: YouTube -->
+        <div class="section">
+            <div class="method-card method-free">
+                <div class="method-header">
+                    <div class="method-name">1️⃣ YouTube Workaround</div>
+                    <div class="method-badges">
+                        <span class="badge badge-free">FREE</span>
+                        <span class="badge badge-easy">EASIEST</span>
+                    </div>
+                </div>
+                
+                <div class="method-details">
+                    <div class="detail-box">
+                        <div class="detail-label">Cost</div>
+                        <div class="detail-value free">$0</div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="detail-label">Works In</div>
+                        <div class="detail-value">Gmail (desktop & mobile app)</div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="detail-label">Time to Set Up</div>
+                        <div class="detail-value">5-10 minutes</div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="detail-label">Technical Skill</div>
+                        <div class="detail-value">None required!</div>
+                    </div>
+                </div>
+                
+                <div class="steps-container">
+                    <div class="steps-title">📋 How to Set Up</div>
+                    
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <div class="step-text">Create a YouTube account using the <strong>exact email address</strong> you send newsletters from</div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <div class="step-text">Upload your logo as channel art (.png or .gif format — animated .gifs will animate in Gmail!)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <div class="step-text">Wait a few days for the logo to appear in Gmail (no posting required!)</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pros-cons">
+                    <div class="pros">
+                        <div class="pros-title">✅ Pros</div>
+                        <ul>
+                            <li>Completely free</li>
+                            <li>Zero technical knowledge needed</li>
+                            <li>Works in just a few days</li>
+                            <li>Supports animated .gifs</li>
+                            <li>No ongoing maintenance</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <div class="cons-title">❌ Cons</div>
+                        <ul>
+                            <li>Only works in Gmail</li>
+                            <li>Separate account needed per email address</li>
+                            <li>Workaround could be closed in future</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Method 2: BIMI -->
+        <div class="section">
+            <div class="method-card method-free">
+                <div class="method-header">
+                    <div class="method-name">2️⃣ BIMI Setup (Yahoo)</div>
+                    <div class="method-badges">
+                        <span class="badge badge-free">FREE</span>
+                        <span class="badge badge-technical">TECHNICAL</span>
+                    </div>
+                </div>
+                
+                <div class="method-details">
+                    <div class="detail-box">
+                        <div class="detail-label">Cost</div>
+                        <div class="detail-value free">$0</div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="detail-label">Works In</div>
+                        <div class="detail-value">Yahoo Mail (~2% of opens)</div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="detail-label">Time to Set Up</div>
+                        <div class="detail-value">1-2 hours + monitoring time</div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="detail-label">Technical Skill</div>
+                        <div class="detail-value">Moderate (DNS editing)</div>
+                    </div>
+                </div>
+                
+                <div class="requirement-box" style="background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%); border-color: #e74c3c;">
+                    <div class="req-title" style="color: #c0392b;">⚙️ Prerequisites Required</div>
+                    <div class="req-text">
+                        You must have <strong>SPF</strong> and <strong>DKIM</strong> email authentication already set up<br>
+                        (Gmail & Yahoo required these in 2024)
+                    </div>
+                </div>
+                
+                <div class="steps-container">
+                    <div class="steps-title">📋 How to Set Up</div>
+                    
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <div class="step-text">Ensure SPF and DKIM are set up (check with your email platform)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <div class="step-text">Generate DMARC record (start with "none" enforcement): <code>v=DMARC1; p=none; sp=none; fo=1; pct=100;</code></div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <div class="step-text">Add DMARC record to your DNS (where your website is hosted)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <div class="step-text">Set up free DMARC monitoring tool (like Postmark) and monitor for several weeks</div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <div class="step-text">Authenticate all legitimate email sources via SPF and DKIM</div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">6</div>
+                        <div class="step-content">
+                            <div class="step-text">Update DMARC to "quarantine" enforcement: <code>v=DMARC1; p=quarantine; sp=none; fo=1; pct=100;</code></div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">7</div>
+                        <div class="step-content">
+                            <div class="step-text">Convert logo to .svg format (use Adobe's free converter if needed)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">8</div>
+                        <div class="step-content">
+                            <div class="step-text">Generate BIMI record and add to your DNS</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pros-cons">
+                    <div class="pros">
+                        <div class="pros-title">✅ Pros</div>
+                        <ul>
+                            <li>Completely free</li>
+                            <li>Improves email security (DMARC)</li>
+                            <li>Works for all email addresses in domain</li>
+                            <li>One-time setup</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <div class="cons-title">❌ Cons</div>
+                        <ul>
+                            <li>Only ~2% of opens are Yahoo</li>
+                            <li>Technical DNS knowledge required</li>
+                            <li>Multi-step process</li>
+                            <li>Requires monitoring period</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Method 3: Apple Mail -->
+        <div class="section">
+            <div class="method-card method-free">
+                <div class="method-header">
+                    <div class="method-name">3️⃣ Apple Business Connect</div>
+                    <div class="method-badges">
+                        <span class="badge badge-free">FREE</span>
+                        <span class="badge badge-easy">MODERATE</span>
+                    </div>
+                </div>
+                
+                <div class="method-details">
+                    <div class="detail-box">
+                        <div class="detail-label">Cost</div>
+                        <div class="detail-value free">$0</div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="detail-label">Works In</div>
+                        <div class="detail-value">Apple Mail (iPhone only)</div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="detail-label">Approval Time</div>
+                        <div class="detail-value">Within 7 business days</div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="detail-label">Languages Supported</div>
+                        <div class="detail-value">English, French, German, Italian, Portuguese, Spanish (+ more)</div>
+                    </div>
+                </div>
+                
+                <div class="requirement-box" style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-color: #2196f3;">
+                    <div class="req-title" style="color: #1565c0;">💡 Prerequisites Required</div>
+                    <div class="req-text">
+                        BIMI must be set up first (Method #2)<br>
+                        Logo must be 1024 x 1024 pixels or larger
+                    </div>
+                </div>
+                
+                <div class="steps-container">
+                    <div class="steps-title">📋 How to Set Up</div>
+                    
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <div class="step-text">Complete BIMI setup (Method #2 above)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <div class="step-text">Create free Apple Business Connect account</div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <div class="step-text">Prepare logo in .heif, .jpg, or .png format (1024x1024px minimum)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <div class="step-text">If using subdomain, review Apple's guidelines</div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <div class="step-text">Submit logo through Apple Business Connect</div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">6</div>
+                        <div class="step-content">
+                            <div class="step-text">Wait for Apple approval (typically within a few days)</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pros-cons">
+                    <div class="pros">
+                        <div class="pros-title">✅ Pros</div>
+                        <ul>
+                            <li>Completely free</li>
+                            <li>Reaches iPhone users</li>
+                            <li>Growing language support</li>
+                            <li>Quick approval process</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <div class="cons-title">❌ Cons</div>
+                        <ul>
+                            <li>Requires BIMI setup first</li>
+                            <li>iPhone only (not iPad/Mac)</li>
+                            <li>Limited language support</li>
+                            <li>Requires Apple approval</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Method 4: CMC -->
+        <div class="section">
+            <div class="method-card method-paid">
+                <div class="method-header">
+                    <div class="method-name">4️⃣ Common Mark Certificate (CMC)</div>
+                    <div class="method-badges">
+                        <span class="badge badge-paid">PAID</span>
+                        <span class="badge badge-technical">TECHNICAL</span>
+                    </div>
+                </div>
+                
+                <div class="method-details">
+                    <div class="detail-box">
+                        <div class="detail-label">Annual Cost</div>
+                        <div class="detail-value price">$1,236/year</div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="detail-label">Works In</div>
+                        <div class="detail-value">Gmail & Yahoo</div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="detail-label">Approval Time</div>
+                        <div class="detail-value">Weeks (not days)</div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="detail-label">Trademark Required?</div>
+                        <div class="detail-value">No</div>
+                    </div>
+                </div>
+                
+                <div class="steps-container">
+                    <div class="steps-title">📋 How to Set Up</div>
+                    
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <div class="step-text">Apply through DigiCert</div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <div class="step-text">Complete paperwork (requires notarization)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <div class="step-text">Wait for approval (typically several weeks)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <div class="step-text">Renew annually ($1,236/year ongoing)</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pros-cons">
+                    <div class="pros">
+                        <div class="pros-title">✅ Pros</div>
+                        <ul>
+                            <li>Works for entire domain (all email addresses)</li>
+                            <li>No trademark required</li>
+                            <li>Works in Gmail & Yahoo</li>
+                            <li>Future-proof if YouTube workaround closes</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <div class="cons-title">❌ Cons</div>
+                        <ul>
+                            <li>$1,236/year ongoing cost</li>
+                            <li>Lengthy approval process</li>
+                            <li>Requires notarization</li>
+                            <li>Limited value over free options currently</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="warning-box">
+                    <div class="warning-icon">💭</div>
+                    <div class="warning-text">
+                        <strong>Expert Take:</strong> Best for large orgs with budget. For smaller teams, stick with free options until CMC value becomes more obvious.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Method 5: VMC -->
+        <div class="section">
+            <div class="method-card method-paid">
+                <div class="method-header">
+                    <div class="method-name">5️⃣ Verified Mark Certificate (VMC)</div>
+                    <div class="method-badges">
+                        <span class="badge badge-paid">PAID</span>
+                        <span class="badge badge-technical">TECHNICAL</span>
+                        <span class="badge" style="background: #2196f3; color: white;">✓ VERIFIED CHECKMARK</span>
+                    </div>
+                </div>
+                
+                <div class="method-details">
+                    <div class="detail-box">
+                        <div class="detail-label">Annual Cost</div>
+                        <div class="detail-value price">$1,425-1,668/year</div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="detail-label">Works In</div>
+                        <div class="detail-value">Gmail & Yahoo</div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="detail-label">Special Feature</div>
+                        <div class="detail-value">Blue checkmark ✓ appears with logo</div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="detail-label">Trademark Required?</div>
+                        <div class="detail-value">YES (from approved offices)</div>
+                    </div>
+                </div>
+                
+                <div class="requirement-box" style="background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%); border-color: #e74c3c;">
+                    <div class="req-title" style="color: #c0392b;">⚠️ Strict Requirements</div>
+                    <div class="req-text">
+                        Logo must be <strong>trademarked</strong> by one of ~12 approved trademark offices<br>
+                        Many newsletters/businesses are not eligible
+                    </div>
+                </div>
+                
+                <div class="steps-container">
+                    <div class="steps-title">📋 How to Set Up</div>
+                    
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <div class="step-text">Verify logo is trademarked by approved office</div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <div class="step-text">Apply through Sectigo ($1,425/year) or DigiCert ($1,668/year)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <div class="step-text">Complete lengthy verification process</div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <div class="step-text">Logo + blue verification checkmark appear in Gmail/Yahoo</div>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <div class="step-text">Renew annually ($1,425-1,668/year ongoing)</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pros-cons">
+                    <div class="pros">
+                        <div class="pros-title">✅ Pros</div>
+                        <ul>
+                            <li>Logo + verified checkmark ✓</li>
+                            <li>Extra authentication & trust signal</li>
+                            <li>Works in Gmail & Yahoo</li>
+                            <li>Shows brand legitimacy</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <div class="cons-title">❌ Cons</div>
+                        <ul>
+                            <li>$1,425-1,668/year ongoing</li>
+                            <li>Trademark absolutely required</li>
+                            <li>Many brands not eligible</li>
+                            <li>Lengthy process</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="warning-box">
+                    <div class="warning-icon">✅</div>
+                    <div class="warning-text">
+                        <strong>Expert Take:</strong> Easy decision for mid-size to large brands with trademarked logos. The verification checkmark adds valuable trust in an era of phishing concerns.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Comparison Table -->
+        <div class="section">
+            <h2 class="section-title">Quick Comparison Table</h2>
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Method</th>
+                            <th>Cost</th>
+                            <th>Gmail</th>
+                            <th>Yahoo</th>
+                            <th>Apple Mail</th>
+                            <th>Difficulty</th>
+                            <th>Best For</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>YouTube Workaround</strong></td>
+                            <td>$0</td>
+                            <td><span class="checkmark">✓</span></td>
+                            <td><span class="cross">✗</span></td>
+                            <td><span class="cross">✗</span></td>
+                            <td>Easy</td>
+                            <td>Everyone</td>
+                        </tr>
+                        <tr>
+                            <td><strong>BIMI</strong></td>
+                            <td>$0</td>
+                            <td><span class="cross">✗</span></td>
+                            <td><span class="checkmark">✓</span></td>
+                            <td><span class="cross">✗</span></td>
+                            <td>Moderate</td>
+                            <td>Technical users</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Apple Business Connect</strong></td>
+                            <td>$0</td>
+                            <td><span class="cross">✗</span></td>
+                            <td><span class="cross">✗</span></td>
+                            <td><span class="checkmark">✓</span></td>
+                            <td>Moderate</td>
+                            <td>After BIMI setup</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CMC</strong></td>
+                            <td>$1,236/yr</td>
+                            <td><span class="checkmark">✓</span></td>
+                            <td><span class="checkmark">✓</span></td>
+                            <td><span class="cross">✗</span></td>
+                            <td>Hard</td>
+                            <td>Large orgs</td>
+                        </tr>
+                        <tr>
+                            <td><strong>VMC</strong></td>
+                            <td>$1,425-1,668/yr</td>
+                            <td><span class="checkmark">✓ + ✓</span></td>
+                            <td><span class="checkmark">✓ + ✓</span></td>
+                            <td><span class="cross">✗</span></td>
+                            <td>Hard</td>
+                            <td>Trademarked brands</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Decision Helper -->
+        <div class="section">
+            <div class="decision-helper">
+                <div class="decision-title">🎯 Which Method Should You Choose?</div>
+                
+                <div class="decision-option">
+                    <div class="decision-scenario">🆓 Just Getting Started</div>
+                    <div class="decision-recommendation">
+                        <strong>Start with Method #1 (YouTube).</strong> It's free, takes 10 minutes, and gets your logo in Gmail immediately. Most of your readers are probably on Gmail anyway.
+                    </div>
+                </div>
+                
+                <div class="decision-option">
+                    <div class="decision-scenario">🔧 Comfortable with Technical Setup</div>
+                    <div class="decision-recommendation">
+                        <strong>Add Methods #2 (BIMI) + #3 (Apple).</strong> These are free and expand your logo coverage. BIMI also improves your email security posture.
+                    </div>
+                </div>
+                
+                <div class="decision-option">
+                    <div class="decision-scenario">💼 Mid-Size to Large Brand</div>
+                    <div class="decision-recommendation">
+                        <strong>Consider Method #4 (CMC) as insurance.</strong> The YouTube workaround could close someday. CMC covers your entire domain and future-proofs your strategy.
+                    </div>
+                </div>
+                
+                <div class="decision-option">
+                    <div class="decision-scenario">✅ Brand with Trademarked Logo</div>
+                    <div class="decision-recommendation">
+                        <strong>Get Method #5 (VMC) — it's a no-brainer.</strong> The verified checkmark adds trust and authenticity. Worth every penny for brands with millions in revenue.
+                    </div>
+                </div>
+                
+                <div class="decision-option">
+                    <div class="decision-scenario">💰 On a Tight Budget</div>
+                    <div class="decision-recommendation">
+                        <strong>Stick with the 3 free methods.</strong> You can reach Gmail, Yahoo, and Apple Mail users at zero cost. The paid options don't add enough value yet for smaller operations.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
