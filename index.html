@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5 Newsletter Business Models</title>
+    <title>Newsletter Resource Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -11,590 +12,392 @@
             box-sizing: border-box;
         }
         
+        :root {
+            --sage: #7D9D7E;
+            --gold: #D4AF37;
+            --navy: #1B3A52;
+            --dark-navy: #0F2537;
+            --cream: #FAF8F3;
+            --white: #FFFFFF;
+            --gray: #6B7280;
+            --light-gray: #E5E7EB;
+        }
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
-            padding: 40px 20px;
-            line-height: 1.5;
+            font-family: 'DM Sans', sans-serif;
+            background: var(--cream);
+            color: var(--dark-navy);
+            line-height: 1.6;
+            padding: 60px 20px;
         }
         
         .container {
-            max-width: 1100px;
+            max-width: 1200px;
             margin: 0 auto;
-            background: white;
-            border-radius: 20px;
-            padding: 50px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding-bottom: 40px;
+            border-bottom: 3px solid var(--sage);
         }
         
         h1 {
-            text-align: center;
-            font-size: 42px;
-            margin-bottom: 10px;
-            color: #1a1a1a;
-        }
-        
-        .subtitle {
-            text-align: center;
-            color: #666;
-            font-size: 16px;
-            margin-bottom: 40px;
-        }
-        
-        .warning-box {
-            background: #fff3cd;
-            border-left: 5px solid #ffc107;
-            padding: 25px;
-            border-radius: 10px;
-            margin-bottom: 40px;
-        }
-        
-        .warning-box h2 {
-            font-size: 22px;
+            font-family: 'Fraunces', serif;
+            font-size: 56px;
+            font-weight: 700;
+            color: var(--navy);
             margin-bottom: 15px;
-            color: #856404;
+            line-height: 1.1;
         }
         
-        .questions {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-            margin-top: 15px;
+        .tagline {
+            font-size: 18px;
+            color: var(--gray);
+            font-weight: 500;
+            letter-spacing: 0.5px;
         }
         
-        .question {
-            background: white;
-            padding: 15px;
-            border-radius: 8px;
-            border-left: 4px solid #ffc107;
+        .section {
+            margin-bottom: 50px;
         }
         
-        .question strong {
-            display: block;
-            margin-bottom: 8px;
-            color: #1a1a1a;
-            font-size: 15px;
-        }
-        
-        .question p {
-            font-size: 13px;
-            color: #555;
-            line-height: 1.4;
-        }
-        
-        .answer-key {
-            background: white;
-            padding: 12px;
-            border-radius: 6px;
-            margin-top: 15px;
-            text-align: center;
-            font-weight: 600;
-            color: #28a745;
-        }
-        
-        .type-section {
-            background: #f8f9fa;
-            border-radius: 15px;
-            padding: 30px;
-            margin-bottom: 30px;
-            border-top: 5px solid #fa709a;
-        }
-        
-        .type-header {
+        .section-header {
             display: flex;
             align-items: center;
             gap: 15px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
         
-        .type-number {
-            background: #fa709a;
-            color: white;
+        .section-icon {
             width: 50px;
             height: 50px;
-            border-radius: 12px;
+            background: var(--sage);
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 24px;
-            font-weight: bold;
-            flex-shrink: 0;
         }
         
-        .type-header h2 {
-            font-size: 28px;
-            color: #1a1a1a;
+        h2 {
+            font-family: 'Fraunces', serif;
+            font-size: 32px;
+            font-weight: 600;
+            color: var(--navy);
         }
         
-        .type-tagline {
-            font-size: 15px;
-            color: #666;
-            margin-bottom: 20px;
-            font-style: italic;
-        }
-        
-        .type-grid {
+        .resource-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
         }
         
-        .type-card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            border-top: 3px solid #fa709a;
+        .resource-card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 30px;
+            border: 2px solid var(--light-gray);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
         
-        .type-card h3 {
-            font-size: 16px;
-            margin-bottom: 12px;
-            color: #fa709a;
+        .resource-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--sage), var(--gold));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+        
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(27, 58, 82, 0.12);
+            border-color: var(--sage);
+        }
+        
+        .resource-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .resource-title {
+            font-family: 'Fraunces', serif;
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        
+        .resource-description {
+            font-size: 15px;
+            color: var(--gray);
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        
+        .resource-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--sage);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            transition: gap 0.3s ease;
+        }
+        
+        .resource-link:hover {
+            gap: 12px;
+            color: var(--navy);
+        }
+        
+        .resource-link::after {
+            content: '→';
+            font-size: 18px;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--dark-navy);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-        }
-        
-        .type-card ul {
-            margin-left: 18px;
-            font-size: 14px;
-        }
-        
-        .type-card li {
-            margin-bottom: 6px;
-            color: #444;
-        }
-        
-        .examples {
-            background: #e8f5e9;
-            padding: 12px;
-            border-radius: 6px;
-            margin-top: 10px;
-            font-size: 13px;
-        }
-        
-        .examples strong {
-            color: #2e7d32;
-        }
-        
-        .audience-size {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 12px;
-            border-radius: 6px;
             margin-bottom: 12px;
+        }
+        
+        .badge.playbook { background: #7D9D7E; color: white; }
+        .badge.strategy { background: #D4AF37; color: white; }
+        .badge.design { background: #1B3A52; color: white; }
+        .badge.framework { background: #E5A663; color: white; }
+        .badge.insights { background: #9BA4B4; color: white; }
+        
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 2px solid var(--light-gray);
+            color: var(--gray);
             font-size: 14px;
-            text-align: center;
-            font-weight: 600;
         }
         
-        .revenue-model {
-            background: #d4edda;
-            border-left: 4px solid #28a745;
-            padding: 15px;
-            border-radius: 6px;
-            margin-top: 15px;
-        }
-        
-        .revenue-model h4 {
-            color: #28a745;
-            margin-bottom: 10px;
-            font-size: 15px;
-        }
-        
-        .revenue-details {
-            font-size: 13px;
-            color: #155724;
-        }
-        
-        .full-width {
-            grid-column: 1 / -1;
-        }
-        
-        .key-stat {
-            background: #fff3cd;
-            padding: 10px;
-            border-radius: 6px;
-            font-size: 13px;
-            margin-top: 8px;
-        }
-        
-        .final-note {
-            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
-            color: white;
-            padding: 30px;
-            border-radius: 15px;
-            margin-top: 30px;
-            text-align: center;
-        }
-        
-        .final-note h2 {
-            font-size: 24px;
-            margin-bottom: 15px;
-        }
-        
-        .final-note p {
-            font-size: 15px;
-            line-height: 1.6;
-        }
-        
-        .goal-boxes {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-            margin-top: 20px;
-        }
-        
-        .goal-box {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 15px;
-            border-radius: 8px;
-        }
-        
-        .goal-box strong {
-            display: block;
-            margin-bottom: 8px;
-            font-size: 15px;
-        }
-        
-        @media (max-width: 1000px) {
-            .type-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .questions, .goal-boxes {
-                grid-template-columns: 1fr;
-            }
-            
-            .container {
-                padding: 30px 20px;
-            }
-            
+        @media (max-width: 768px) {
             h1 {
-                font-size: 32px;
+                font-size: 40px;
             }
+            
+            h2 {
+                font-size: 26px;
+            }
+            
+            .resource-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            body {
+                padding: 40px 15px;
+            }
+        }
+        
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Quick nav */
+        .quick-nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+        
+        .quick-nav a {
+            padding: 10px 20px;
+            background: var(--white);
+            border: 2px solid var(--sage);
+            border-radius: 25px;
+            color: var(--navy);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        
+        .quick-nav a:hover {
+            background: var(--sage);
+            color: var(--white);
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>📬 5 Newsletter Business Models</h1>
-        <div class="subtitle">How indie newsletters grow and make money (based on type)</div>
+        <header>
+            <h1>Newsletter Resource Library</h1>
+            <p class="tagline">Your comprehensive guide to newsletter strategy, growth, and operations</p>
+        </header>
         
-        <!-- WARNING BOX -->
-        <div class="warning-box">
-            <h2>⚠️ Before You Start: Answer These 4 Questions</h2>
-            <p style="margin-bottom: 15px; font-size: 14px;">Most newsletters fail. Don't launch until you can answer YES to questions 1, 2, and 4, and NO to question 3:</p>
-            
-            <div class="questions">
-                <div class="question">
-                    <strong>1. Does this newsletter have a specific audience?</strong>
-                    <p>If your answer is "anyone and everyone!", rethink. The best newsletters are written for someone specific.</p>
-                </div>
-                
-                <div class="question">
-                    <strong>2. Do you have something unique to share?</strong>
-                    <p>Original reporting, unique perspective, or curated content that's difficult to find elsewhere.</p>
-                </div>
-                
-                <div class="question">
-                    <strong>3. Can that audience get similar content elsewhere?</strong>
-                    <p>If yes, you'll struggle. Go back to questions 1 and 2 and rethink what you're building.</p>
-                </div>
-                
-                <div class="question">
-                    <strong>4. Do you already have your own audience?</strong>
-                    <p>It's infinitely easier to grow if you have followers on social, a podcast, or a blog. Possible without, but expect a long road.</p>
-                </div>
-            </div>
-            
-            <div class="answer-key">
-                ✅ Correct answers: YES • YES • NO • YES
-            </div>
-        </div>
+        <nav class="quick-nav">
+            <a href="#frameworks">Frameworks</a>
+            <a href="#playbooks">Playbooks</a>
+            <a href="#strategy">Strategy</a>
+            <a href="#design">Design</a>
+            <a href="#insights">Insights</a>
+        </nav>
         
-        <!-- TYPE 1: THE ANALYST -->
-        <div class="type-section">
-            <div class="type-header">
-                <div class="type-number">1</div>
-                <h2>The Analyst</h2>
+        <!-- STRATEGIC FRAMEWORKS -->
+        <section class="section" id="frameworks">
+            <div class="section-header">
+                <div class="section-icon">🎯</div>
+                <h2>Strategic Frameworks</h2>
             </div>
-            <div class="type-tagline">"Stratechery for X" — Deep analysis of a specific industry or topic</div>
-            
-            <div class="audience-size">
-                Audience Size: Low thousands → 200,000+ (depends on niche size)
-            </div>
-            
-            <div class="examples">
-                <strong>Examples:</strong> Stratechery (tech), The Pomp Letter (crypto), Lenny's Newsletter (product/startups)
-            </div>
-            
-            <div class="type-grid">
-                <div class="type-card">
-                    <h3>How They Grow</h3>
-                    <ul>
-                        <li>Original content (free)</li>
-                        <li>Earned media (podcasts, quoted in articles)</li>
-                        <li>Word of mouth (professional community shares)</li>
-                    </ul>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <span class="badge framework">Framework</span>
+                    <h3 class="resource-title">Shiny Object Filter</h3>
+                    <p class="resource-description">Four-question decision framework to filter opportunities and stay focused on what matters.</p>
+                    <a href="shiny-object-filter.html" class="resource-link">View Framework</a>
                 </div>
                 
-                <div class="type-card">
-                    <h3>Primary Revenue</h3>
-                    <ul>
-                        <li>Paid subscriptions ($100-200/year)</li>
-                        <li>Memberships with community ($499+/year)</li>
-                        <li>Native ads in free version</li>
-                    </ul>
-                    <div class="key-stat">
-                        Stratechery: $120/year subscription
-                    </div>
-                </div>
-                
-                <div class="type-card">
-                    <h3>Other Revenue</h3>
-                    <ul>
-                        <li>Sponsored case studies</li>
-                        <li>Job boards (companies pay to advertise)</li>
-                        <li>Podcast advertising</li>
-                    </ul>
+                <div class="resource-card">
+                    <span class="badge framework">Framework</span>
+                    <h3 class="resource-title">Paid Newsletter Playbook</h3>
+                    <p class="resource-description">Complete framework for building sustainable paid newsletters with reality checks and checklists.</p>
+                    <a href="Paidnewsletterplaybook.html" class="resource-link">View Playbook</a>
                 </div>
             </div>
-        </div>
+        </section>
         
-        <!-- TYPE 2: THE CURATOR -->
-        <div class="type-section">
-            <div class="type-header">
-                <div class="type-number">2</div>
-                <h2>The Curator</h2>
+        <!-- COMPREHENSIVE PLAYBOOKS -->
+        <section class="section" id="playbooks">
+            <div class="section-header">
+                <div class="section-icon">📚</div>
+                <h2>Comprehensive Playbooks</h2>
             </div>
-            <div class="type-tagline">Links and content roundups — daily or weekly digests for specific audiences</div>
-            
-            <div class="audience-size">
-                Audience Size: Few hundred → Millions per day
-            </div>
-            
-            <div class="examples">
-                <strong>Examples:</strong> Morning Brew (business), TheSkimm (millennial women), NextDraft (general news), The Browser (long articles)
-            </div>
-            
-            <div class="type-grid">
-                <div class="type-card">
-                    <h3>How Big Curators Grow</h3>
-                    <ul>
-                        <li>Paid acquisition ($100k+/month on ads)</li>
-                        <li>Earned media (TheSkimm did this heavily)</li>
-                        <li>Referral programs (rewards for sharing)</li>
-                    </ul>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <span class="badge playbook">Playbook</span>
+                    <h3 class="resource-title">Growth Playbook</h3>
+                    <p class="resource-description">Systematic strategies and tactics for growing your newsletter audience sustainably.</p>
+                    <a href="newsletter-growth-playbook.html" class="resource-link">View Playbook</a>
                 </div>
                 
-                <div class="type-card">
-                    <h3>How Small Curators Grow</h3>
-                    <ul>
-                        <li>Collaborations with other newsletters</li>
-                        <li>Earned media</li>
-                        <li>Word-of-mouth sharing</li>
-                    </ul>
-                    <div class="key-stat">
-                        ⚠️ Hardest category to build without existing audience
-                    </div>
+                <div class="resource-card">
+                    <span class="badge playbook">Playbook</span>
+                    <h3 class="resource-title">Monetization Playbook</h3>
+                    <p class="resource-description">Proven frameworks for turning your newsletter into a revenue-generating asset.</p>
+                    <a href="newsletter-monetization-playbook.html" class="resource-link">View Playbook</a>
                 </div>
                 
-                <div class="type-card">
-                    <h3>Revenue Models</h3>
-                    <ul>
-                        <li>Native advertising (CPO: $15-50 per 1,000 opens)</li>
-                        <li>Classified ads ($25-200 per blurb)</li>
-                        <li>Events business</li>
-                        <li>Affiliate links</li>
-                    </ul>
-                    <div class="key-stat">
-                        Usually NO paywall — ad-dependent
-                    </div>
+                <div class="resource-card">
+                    <span class="badge playbook">Playbook</span>
+                    <h3 class="resource-title">Operations Playbook</h3>
+                    <p class="resource-description">Systems and workflows to run your newsletter efficiently and consistently.</p>
+                    <a href="newsletter-operations-playbook.html" class="resource-link">View Playbook</a>
                 </div>
             </div>
-        </div>
+        </section>
         
-        <!-- TYPE 3: THE EXPERT -->
-        <div class="type-section">
-            <div class="type-header">
-                <div class="type-number">3</div>
-                <h2>The Expert</h2>
+        <!-- STRATEGY & INSIGHTS -->
+        <section class="section" id="strategy">
+            <div class="section-header">
+                <div class="section-icon">💡</div>
+                <h2>Strategy & Positioning</h2>
             </div>
-            <div class="type-tagline">Deep knowledge on a specific niche — "how to" content and advice</div>
-            
-            <div class="audience-size">
-                Audience Size: Few thousand → 1 million+ (James Clear)
-            </div>
-            
-            <div class="examples">
-                <strong>Examples:</strong> James Clear (habits), Marketing Examined (marketing), Lenny's Newsletter (product growth), Your Local Epidemiologist (science)
-            </div>
-            
-            <div class="type-grid">
-                <div class="type-card">
-                    <h3>How They Grow</h3>
-                    <ul>
-                        <li>Original content (shared on social)</li>
-                        <li>Lead magnets (free guides in exchange for email)</li>
-                        <li>1-to-1 community interaction</li>
-                        <li>Earned media (quoted, podcast guest)</li>
-                        <li>Word of mouth + referral programs</li>
-                    </ul>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <span class="badge strategy">Strategy</span>
+                    <h3 class="resource-title">Strategy & Positioning Brief</h3>
+                    <p class="resource-description">Core principles for defining your newsletter's unique position in the market.</p>
+                    <a href="newsletter_strategy_positioning_brief.html" class="resource-link">View Brief</a>
                 </div>
                 
-                <div class="type-card full-width">
-                    <h3>Revenue Models</h3>
-                    <div class="revenue-model">
-                        <h4>🎯 Primary: Newsletter funnels to paid products</h4>
-                        <div class="revenue-details">
-                            <ul>
-                                <li>Books they've written</li>
-                                <li>Events or workshops</li>
-                                <li>Consulting, coaching, or teaching</li>
-                                <li>Online courses (Teachable, Skillshare)</li>
-                                <li>Affiliate links</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="key-stat" style="margin-top: 10px;">
-                        <strong>Key difference from Analyst:</strong> Newsletter is typically FREE and open to all. Goal is to maximize engaged audience to convert to paid products. Audience size often less important than engagement.
-                    </div>
+                <div class="resource-card">
+                    <span class="badge strategy">Strategy</span>
+                    <h3 class="resource-title">Unmeasurable Value</h3>
+                    <p class="resource-description">Understanding and articulating the intangible benefits newsletters provide.</p>
+                    <a href="newsletter-unmeasurable-value.html" class="resource-link">View Guide</a>
+                </div>
+                
+                <div class="resource-card">
+                    <span class="badge strategy">Strategy</span>
+                    <h3 class="resource-title">Mistakes & Lessons</h3>
+                    <p class="resource-description">Common pitfalls and hard-won lessons from newsletter operators.</p>
+                    <a href="newsletter_mistakes_lessons.html" class="resource-link">View Lessons</a>
                 </div>
             </div>
-        </div>
+        </section>
         
-        <!-- TYPE 4: THE REPORTER -->
-        <div class="type-section">
-            <div class="type-header">
-                <div class="type-number">4</div>
-                <h2>The Reporter</h2>
+        <!-- DESIGN & BRANDING -->
+        <section class="section" id="design">
+            <div class="section-header">
+                <div class="section-icon">🎨</div>
+                <h2>Design & Branding</h2>
             </div>
-            <div class="type-tagline">Original reporting on a beat — local, national politics, or specific topics</div>
-            
-            <div class="audience-size">
-                Audience Size: Low thousands (local/niche) → Hundreds of thousands (national)
-            </div>
-            
-            <div class="examples">
-                <strong>Examples:</strong> The Dispatch (politics, 30k paid subs), Popular Information (accountability journalism), The Charlotte Ledger (local), HEATED (climate)
-            </div>
-            
-            <div class="type-grid">
-                <div class="type-card">
-                    <h3>How They Grow</h3>
-                    <ul>
-                        <li><strong>Quality reporting</strong> (breaks news, exclusive stories)</li>
-                        <li>Earned media (quoted, podcast guest)</li>
-                        <li>Paid acquisition (small budget reinvestment)</li>
-                    </ul>
-                    <div class="key-stat">
-                        Growth driven by reputation + exclusive reporting
-                    </div>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <span class="badge design">Design</span>
+                    <h3 class="resource-title">Logo Design Guide</h3>
+                    <p class="resource-description">Comprehensive guide to creating a memorable and professional newsletter logo.</p>
+                    <a href="newsletter_logo_guide.html" class="resource-link">View Guide</a>
                 </div>
                 
-                <div class="type-card">
-                    <h3>Primary Revenue</h3>
-                    <ul>
-                        <li>Paid subscriptions ($50-150/year typical)</li>
-                        <li>Premium memberships ($1,500+/year)</li>
-                        <li>Some content behind paywall</li>
-                    </ul>
-                    <div class="key-stat">
-                        Tangle: 6,500 paid = $30k/month
-                    </div>
+                <div class="resource-card">
+                    <span class="badge design">Design</span>
+                    <h3 class="resource-title">Design Tactics</h3>
+                    <p class="resource-description">Practical tactics for improving newsletter design, layout, and readability.</p>
+                    <a href="newsletter_design_tactics.html" class="resource-link">View Tactics</a>
                 </div>
                 
-                <div class="type-card">
-                    <h3>Secondary Revenue</h3>
-                    <ul>
-                        <li>Advertising (especially local newsletters)</li>
-                        <li>Local events (ticket sales + sponsorships)</li>
-                    </ul>
-                    <div class="key-stat">
-                        Niche beats can charge premium: 340B Report charges $749/year
-                    </div>
+                <div class="resource-card">
+                    <span class="badge design">Design</span>
+                    <h3 class="resource-title">Frequency Infographic</h3>
+                    <p class="resource-description">Visual guide to choosing the right publishing frequency for your newsletter.</p>
+                    <a href="newsletter_frequency_infographic.html" class="resource-link">View Infographic</a>
                 </div>
             </div>
-        </div>
+        </section>
         
-        <!-- TYPE 5: THE WRITER -->
-        <div class="type-section">
-            <div class="type-header">
-                <div class="type-number">5</div>
-                <h2>The Writer</h2>
+        <!-- INDUSTRY INSIGHTS -->
+        <section class="section" id="insights">
+            <div class="section-header">
+                <div class="section-icon">📊</div>
+                <h2>Industry Insights</h2>
             </div>
-            <div class="type-tagline">Platform for creative work — essays, comics, interviews, or genre-defying content</div>
-            
-            <div class="audience-size">
-                Audience Size: Limited by writer's existing audience (few thousand → tens of thousands)
-            </div>
-            
-            <div class="examples">
-                <strong>Examples:</strong> Chuck Palahniuk, Chris La Tray (An Irritable Métis), Lyz Lenz (Men Yell at Me), Robin Sloan, Edith Zimmerman (Drawing Links)
-            </div>
-            
-            <div class="type-grid">
-                <div class="type-card">
-                    <h3>How They Grow</h3>
-                    <ul>
-                        <li>Initial surge from social media promotion</li>
-                        <li>Sharing/shout-outs from other authors</li>
-                        <li>Limited ongoing growth tactics</li>
-                    </ul>
-                    <div class="key-stat">
-                        Readers are loyal and look forward to seeing writer's name in inbox
-                    </div>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <span class="badge insights">Insights</span>
+                    <h3 class="resource-title">Newsletter Trends 2025</h3>
+                    <p class="resource-description">Emerging trends and shifts shaping the newsletter landscape in 2025.</p>
+                    <a href="newsletter_trends_2025.html" class="resource-link">View Trends</a>
                 </div>
                 
-                <div class="type-card">
-                    <h3>Primary Goal</h3>
-                    <ul>
-                        <li>Build audience for next book</li>
-                        <li>Promote creative work</li>
-                        <li>Connect with fans</li>
-                    </ul>
-                    <div class="key-stat">
-                        Often NOT monetizing the newsletter directly
-                    </div>
-                </div>
-                
-                <div class="type-card">
-                    <h3>When They Monetize</h3>
-                    <ul>
-                        <li>Paid subscriptions ($50-100/year)</li>
-                        <li>Exclusive essays/content</li>
-                        <li>Serialized books (chapters to paying supporters)</li>
-                    </ul>
+                <div class="resource-card">
+                    <span class="badge insights">Insights</span>
+                    <h3 class="resource-title">Newsletter Conference 2025</h3>
+                    <p class="resource-description">Key takeaways and insights from major newsletter industry conferences.</p>
+                    <a href="newsletter_conference_2025.html" class="resource-link">View Conference Notes</a>
                 </div>
             </div>
-        </div>
+        </section>
         
-        <!-- FINAL NOTE -->
-        <div class="final-note">
-            <h2>💡 Not Every Newsletter Needs to Make Money</h2>
-            <p style="margin-bottom: 20px;">Many newsletters serve personal, professional, leadership, or learning goals. Success isn't always measured in dollars.</p>
-            
-            <div class="goal-boxes">
-                <div class="goal-box">
-                    <strong>Personal Goals</strong>
-                    Build a weekly writing habit
-                </div>
-                <div class="goal-box">
-                    <strong>Professional Goals</strong>
-                    Open doors for speaking opportunities
-                </div>
-                <div class="goal-box">
-                    <strong>Leadership Goals</strong>
-                    Build a space for others to learn from your experience
-                </div>
-                <div class="goal-box">
-                    <strong>Learning Goals</strong>
-                    Get better at a skill through practice
-                </div>
-            </div>
-            
-            <p style="margin-top: 20px; font-weight: 600;">Most newsletters blur between multiple categories. It's up to you to decide how to get the most out of yours.</p>
-        </div>
+        <footer>
+            <p>Newsletter Resource Library · 13 Strategic Resources</p>
+        </footer>
     </div>
 </body>
 </html>
